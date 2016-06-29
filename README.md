@@ -16,3 +16,4 @@ imgRunView.imgArray = self.imgMarr;   //本地图片
   NSLog(@"%ld",(long)index);
 }];
 ```
+<img src="http://p700.cn/c/1.gif">
