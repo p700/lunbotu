@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  temp
+//
+//  Created by 朱凯 on 16/6/13.
+//  Copyright © 2016年 朱凯. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+//屏蔽 非OC 文件
+#ifdef __OBJC__
+
+// OC 扩展文件
+#pragma mark -- OC 扩展文件
+#import "UIView+ZKExtension.h"
+// 随机色
+#pragma mark -- 随机色
+#define ZKRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0  blue:arc4random_uniform(256)/255.0  alpha:0.8]
+// 打印宏
+#pragma mark -- 打印宏
+#ifdef DEBUG
+#define ZKLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZKLog(...)
+#endif
+
+
+
+#endif /*__OBJC__*/
+
+
+#endif /* PrefixHeader_pch */
